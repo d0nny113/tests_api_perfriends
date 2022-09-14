@@ -5,20 +5,20 @@ pf = PetFriends()
 
 @pytest.fixture(scope='class')
 def email():
-    email = 'd0nny13051990@gmail.com'
+    email = 'valid_email'
     return email
 
 
 @pytest.fixture(scope='class')
 def password():
-    password = 'vfksitd1990'
+    password = 'valid_password'
     return password
 
 
 @pytest.fixture(scope='class')
 def get_key():
-    headers = {'email': 'loop1@loop.ru',
-               'password': 'loop'
+    headers = {'email': 'valid_password',
+               'password': 'valid_email'
                }
 
     response = requests.get('https://petfriends.skillfactory.ru/api/key', headers=headers)
